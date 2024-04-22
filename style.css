@@ -17,27 +17,242 @@ body {
     line-height: 1.6;
 }
 
-
 /* HLAVICKA */
 
 .titulek {
     font-family: 'Raleway', serif;
 }
 
+header {
+    background-image: url(images/island-hlavicka.jpg);
+    background-position: center center;
+    background-size: cover;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    font-weight: bold;
+}
+
+.titulek {
+    font-size: 56px;
+}
+
+.cara {
+    width: 85px;
+    height: 2px;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.autor {
+    font-style: italic;
+}
 
 /* MENU */
+.menu {
+    text-align: center;
+    margin: 80px;
+    list-style: none;
 
+}
 
+.menu a {
+    display: inline-block;
+    font-family: 'Raleway', serif;
+    text-transform: uppercase ;
+    text-decoration: none;
+    color: rgba(3, 3, 3, 0.363);
+    padding: 5px;
+}
 
 
 /* OBSAH */
 
+p {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+h2 {
+    font-family: 'Raleway', serif;
+    font-size: 36px;
+    padding: 30px;
+    margin:0
+}
+
+.modra-cara {
+    width: 85px;
+    height: 4px;
+    background-color: rgb(107, 181, 250);
+    margin-bottom: 50px;
+}
+
+.skogafoss {
+    padding-top: 50px;
+}
+
+.popisek {
+    text-align: center;
+    color: rgba(3, 3, 3, 0.363);
+    font-family: 'Raleway', serif;
+}
+
+.popisek a {
+    color: rgba(3, 3, 3, 0.363);
+    font-family: 'Raleway', serif;
+}
+
+img {
+    width: 100%;
+    padding-top: 50px;
+}
 
 
 
 /* FOTOGALERIE */
 
+.foto .popisek {
+    font-weight: bold;
+}
 
+.popisek-copy {
+    font-weight: normal;
+}
 
+#fotogalerie {
+    padding-bottom: 50px;
+    padding-top: 50px;
+    font-family: 'Raleway', serif;
+}
+
+.foto img {
+    padding-top: 0;
+}
 
 /* PATICKA */
+footer {
+    padding-top: 50px;
+    box-shadow: inset 0px 5px 10px rgba(0, 0, 0, 0.1);
+    color: rgba(3, 3, 3, 0.363);
+}
+
+footer a {
+    color: rgba(3, 3, 3, 0.363);
+}
+
+/*verze pro tablet*/
+@media (min-width: 500px) {
+
+    .menu {
+        display: flex;
+        justify-content: space-between;
+        margin: 30px;
+        margin-bottom: 50px;
+    }
+    
+    .menu a {
+        padding: 20px;
+    }
+
+    .obrazek,
+    .foto {
+        position: relative;
+    }
+
+    .popisek {
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+        z-index: 1;
+        color: white;
+        padding: 20px;
+        margin: 0;
+    }
+    
+    .popisek a {
+        color: rgba(3, 3, 3, 0.363);
+        font-family: 'Raleway', serif;
+        color: white;
+        z-index: 1;
+    }
+    
+    .foto .popisek {
+        display: none;
+    }
+   
+    .galerie {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .foto {
+        width: 50%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .foto img {
+        display: block;
+    }
+
+    #fotogalerie {
+        padding-bottom: 0;
+    }
+}
+
+/*verze pro PC*/
+@media (min-width: 1000px) {
+    
+    header {
+        padding-bottom: 100px;
+        margin-bottom: -50px;
+    }
+
+    .obdelnik {
+        width: 960px;
+        box-shadow: -5px 0 10px rgba(0, 0, 0, 0.3), 
+                    5px 0 10px rgba(0, 0, 0, 0.3);
+        padding-top: 50px;
+        padding-bottom: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        z-index: 2;
+    }
+
+    .menu {
+        display: block;
+        float: left;
+        margin: 30px;
+        text-align: left;
+        padding-left: 5px;
+    }
+    
+    .menu a {
+        display: inline-block;
+        padding: 5px;
+    }
+
+    #uvod p {
+        padding-left: 250px;
+    }
+    
+    #proc p {
+        padding-right: 250px;
+    }
+    
+    #videt p,
+    #videt h2,
+    #videt .modra-cara {
+        padding-left: 250px;
+    }
+
+    .foto {
+        width: 33.3%;
+    }
+
+    footer {
+        box-shadow: none;
+    }
+}
+
