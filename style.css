@@ -21,6 +21,7 @@ body {
 
 .titulek {
     font-family: 'Raleway', serif;
+    font-size: 56px;
 }
 
 header {
@@ -31,10 +32,6 @@ header {
     color: white;
     padding: 20px;
     font-weight: bold;
-}
-
-.titulek {
-    font-size: 56px;
 }
 
 .cara {
@@ -54,7 +51,6 @@ header {
     text-align: center;
     margin: 80px;
     list-style: none;
-
 }
 
 .menu a {
@@ -65,7 +61,6 @@ header {
     color: rgba(3, 3, 3, 0.363);
     padding: 5px;
 }
-
 
 /* OBSAH */
 
@@ -92,7 +87,7 @@ h2 {
     padding-top: 50px;
 }
 
-.popisek {
+.foto-popis {
     text-align: center;
     color: rgba(3, 3, 3, 0.363);
     font-family: 'Raleway', serif;
@@ -100,15 +95,12 @@ h2 {
 
 .popisek a {
     color: rgba(3, 3, 3, 0.363);
-    font-family: 'Raleway', serif;
 }
 
 img {
     width: 100%;
     padding-top: 50px;
 }
-
-
 
 /* FOTOGALERIE */
 
@@ -160,21 +152,16 @@ footer a {
         position: relative;
     }
 
-    .popisek {
+    .foto-popis {
         position: absolute;
-        bottom: 10px;
-        right: 10px;
+        bottom: 5px;
+        right: 0;
         z-index: 1;
         color: white;
-        padding: 20px;
-        margin: 0;
     }
     
     .popisek a {
-        color: rgba(3, 3, 3, 0.363);
-        font-family: 'Raleway', serif;
         color: white;
-        z-index: 1;
     }
     
     .foto .popisek {
@@ -206,7 +193,8 @@ footer a {
     
     header {
         padding-bottom: 100px;
-        margin-bottom: -50px;
+        position: relative;
+        z-index: 1;
     }
 
     .obdelnik {
@@ -217,6 +205,8 @@ footer a {
         padding-bottom: 10px;
         margin-left: auto;
         margin-right: auto;
+        margin-top: -50px;
+        position: relative;
         z-index: 2;
     }
 
@@ -234,17 +224,19 @@ footer a {
     }
 
     #uvod p {
-        padding-left: 250px;
+        margin-left: 250px;
     }
     
-    #proc p {
-        padding-right: 250px;
+    #proc p,
+    #proc h2 {
+        margin-right: 250px;
+        margin-left: 30px;
     }
     
     #videt p,
     #videt h2,
     #videt .modra-cara {
-        padding-left: 250px;
+        margin-left: 250px;
     }
 
     .foto {
