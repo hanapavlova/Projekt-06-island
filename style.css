@@ -201,8 +201,9 @@ footer a {
         width: 960px;
         box-shadow: -5px 0 10px rgba(0, 0, 0, 0.3), 
                     5px 0 10px rgba(0, 0, 0, 0.3);
+        background-color: white;
         padding-top: 50px;
-        padding-bottom: 10px;
+        padding-bottom: 0;
         margin-left: auto;
         margin-right: auto;
         margin-top: -50px;
@@ -245,6 +246,13 @@ footer a {
 
     footer {
         box-shadow: none;
+        width: 960px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    footer p {
+        padding-left: 0;
     }
 }
 
